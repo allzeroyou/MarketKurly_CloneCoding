@@ -1,0 +1,362 @@
+:root{
+  /* consistency를 위함 */
+  /* color */
+--white-color:#FFFFFF;
+--black-color:#140700;
+--purple-color:#5f0080;
+--red-color:rgb(250, 98, 47);
+--grey-dark-color:#333;
+--grey-light-color:#404040;
+
+  /* size  */
+--padding:16px;
+--action-size: 36px;
+--logo-size: 100px;
+
+  /* font size */
+--font-large: 28px;
+--font-medium: 16px;
+--font-small: 12px;
+--font-micor: 10px;
+
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+a{
+  background-color: transparent;
+  text-decoration: none;
+}
+
+body{
+  font-family: Roboto;
+}
+
+ul {
+  list-style: none;
+}
+
+button, button:focus{
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* header  */
+header{
+  position: relative;
+}
+/* 배너 */
+.banner{
+  position: relative;
+  min-width: 1050px;
+  text-align: center;
+  line-height: 42px;
+  font-size: var(--font-medium);
+}
+header .banner p{
+  display: block;
+  height: 42px;
+  background-color: var(--purple-color);
+  color:var(--white-color);
+}
+
+
+
+
+/* userMenu */
+#userMenu{
+  width: 1050px;
+  margin: 0 auto;
+  letter-spacing: -.3px;
+  font-size: var(--font-small);
+  height: 36px;
+}
+#userMenu .list_menu {
+  float: right;
+}
+#userMenu .menu {
+  position: relative;
+  z-index: 400;
+  float: left;
+}
+#userMenu .menu_join .link_menu {
+  color:var(--purple-color);
+}
+#userMenu .link_menu {
+  float: left;
+  height: 37px;
+  padding: 0 12px;
+  color: var(--grey-dark-color);
+  line-height: 35px;
+  white-space: nowrap;
+}
+#userMenu .menu .menu_service .link_menu {
+  padding-right: 13px;
+}
+/* 고객센터의 하위 sub ul */
+/* #userMenu .menu_service .sub {
+  left: auto;
+  right: 0;
+}
+#userMenu .sub a {
+  font-size: var(--font-small);
+  color: var(--grey-light-color);
+  line-height: 24px;
+  white-space: nowrap;
+  cursor: pointer;
+} */
+
+
+
+/* 마켓컬리 로고 */
+#headerLogo{
+  position: relative;
+  width: 1050px;
+  height: 63px;
+  margin: 0 auto;
+}
+.layout-wrapper {
+  position: relative;
+  width: 1050px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#headerLogo .logo{ 
+  position: absolute;
+  left: 0;
+  bottom: 6px;
+  width: 100%;
+  height: 79px;
+  text-align: center;
+}
+#headerLogo .logo .link_main {
+  display: inline-block;
+  height: 79px;
+}
+#headerLogo .logo #logoContainer {
+  margin: 0 auto;
+}
+
+#headerLogo .logo img {
+  display: block;
+  width: 103px;
+  height: 79px;
+  margin: 0 auto;
+}
+
+
+/* 샛별 택배 배송 안내 img */
+#headerLogo .moring_delivery {
+  position: absolute;
+  left: -1px;
+  top: -28px;
+  margin: auto;
+  height: 22px;
+}
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+
+
+/* menu */
+nav #menu{
+  position: relative;
+  z-index: 300;
+  min-width: 1050px;
+  background-color: #fff;
+  font-family: 'Noto Sans';
+  letter-spacing: -0.3px;
+}
+#menu .inner_menu{
+  position: relative;
+  width: 1050px;
+  height: 56px;
+  margin: 0 auto;
+}
+#menu .menu_main{
+  overflow: hidden;
+  width: 1050px;
+  margin: 0 auto;
+}
+#menu .menu_main .menu_text{
+  float: left;
+  width: 100%;
+}
+#menu .menu_main .menu_text a {
+  overflow: hidden;
+  float: left;
+  width: 124px;
+  height: 55px;
+  padding: 16px 0 0;
+  font-size: var(--font-medium);
+  color: var(--grey-dark-color);
+  line-height: 20px;
+  text-align: center;
+}
+#menu .menu_main .menu_text a i.fa-solid{
+  margin-right: 8px;
+}
+#menu .menu_search{
+  position: absolute;
+  right: 174px;
+  top: 10px;
+  width: 242px;
+}
+#menu .menu_search .box_search{
+  width: 242px;
+  height: 36px;
+  padding: 0 60px 0 14px;
+  border: 1px solid #f7f7f6;
+  border-radius: 18px;
+  background-color: #f7f7f7;
+  font-family: 'Noto Sans';
+  font-size: var(--font-small);
+  color: var(--grey-light-color);
+  line-height: 16px;
+  outline: none;
+}
+#menu .menu_search i.fa-solid.fa-magnifying-glass{
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+#menu .btn_location.on{
+  background-image: url(https://res.kurly.com/pc/ico/2008/ico_delivery_setting.svg?ver=1);
+}
+#menu .btn_location {
+  overflow: hidden;
+  position: absolute;
+  right: 114px;
+  top: 10px;
+  width: 36px;
+  height: 36px;
+  border: 0 none;
+  background: url(https://res.kurly.com/pc/ico/2008/ico_delivery_setting_done.svg) no-repeat 50% 50%;
+  text-indent: -9999px;
+}
+#menu .pick {
+  display: inline-block;
+  position: absolute;
+  right: 61px;
+  top: 10px;
+  width: 36px;
+  height: 36px;
+  font-size: 0px;
+}
+#menu .pick .btn_pick{
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border: none;
+  color: transparent;
+  background: url(https://res.kurly.com/pc/service/pick/btn-heart-off.svg) no-repeat 50% 50%;
+  cursor: pointer;
+}
+#menu .cart_count {
+  position: absolute;
+  right: 8px;
+  top: 10px;
+}
+#menu .cart_count .btn_cart{
+  display: block;
+    width: 36px;
+    height: 36px;
+    border: none;
+    color: transparent;
+    background: url(https://res.kurly.com/pc/service/common/2011/ico_cart.svg) no-repeat 50% 50%;
+}
+
+section .outside{
+  padding: 32px 0px 40px;
+}
+section .section_title_out{
+  margin-bottom: 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .section_title{
+  display: flex;
+    align-items: center;
+    padding: 8px;
+}
+section .section_title_txt{
+  color:var(--grey-dark-color);
+  font-size: var(--font-large);
+  line-height: 1.15;
+  letter-spacing: -0.26px;
+  font-weight: 600;
+  
+}
+section .section_p{
+  font-size: var(--font-medium);
+  font-weight: normal;
+  line-height: 1.45;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: var(--grey-light-color);
+  margin-top: 2px;
+}
+section .list_swiper{
+  position: relative;
+  overflow: hidden;
+  display:flex;
+  justify-content: center;
+}
+table{
+  border-spacing: 20px;
+}
+.list_item .list_img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out 0s;
+  padding-bottom: 10px;
+}
+.list_item .description p{
+  font-size: var(--font-medium);
+  line-height: 1.45;
+  color: var(--grey-dark-color);
+  font-weight: 400;
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  letter-spacing: normal;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+.list_item .price{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.list_item .discountrate{
+  color: var(--red-color);
+    font-size: var(--font-medium);
+    font-weight: 800;
+    line-height: 1.5;
+    white-space: nowrap;
+    margin-right: 7px;
+}
+.list_item .sale{
+  color:var(--grey-light-color);
+    font-size: var(--font-medium);
+    font-weight: 800;
+    line-height: 1.5;
+    white-space: nowrap;
+}
