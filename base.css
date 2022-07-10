@@ -4,15 +4,15 @@
 
 :root{
   /* consistency를 위함 */
-  /* color */
---white-color:#FFFFFF;
---semi-white: #f7f7f7;
---black-color:#140700;
+  /* color */ 
+--white-color:#FFFFFF;   background-color: var(--white-color);
+--semi-white: #f7f7f7; 
+--black-color:#140700;   color: var(--black-color);
 --purple-color:#5f0080;
---red-color:rgb(250, 98, 47);
+--red-color:rgb(250, 98, 47); var(--purple-color);
 --grey-dark-color:#333;
---grey-light-color:#404040;
-
+--grey-light-color:#404040;  color: var(--grey-light-color);
+--yellow-color: #ffbf00;   
 
   /* size  */
 --padding:16px;
@@ -20,11 +20,11 @@
 --logo-size: 100px;
 
   /* font size */
---font-exlarge: 28px;
---font-large: 20px
---font-medium: 16px;
---font-small:14px
---font-xsmall: 12px;
+--font-exlarge: 28px;  font-size: var(--font-exlarge);
+--font-large: 20px;   font-size: var(--font-large);
+--font-medium: 16px; font-size: var(--font-medium);
+--font-small:14px;   font-size: var(--font-medium);
+--font-xsmall: 12px;    font-size: var(--font-xsmall);
 --font-micor: 10px;
 
 }
@@ -62,6 +62,11 @@ button, button:focus{
 header{
   position: relative;
 }
+/* 메인의 아래쪽 경계선 */
+#main {
+  border-bottom: 1px solid #f7f7f7;
+}
+
 /* 배너 */
 .banner{
   position: relative;

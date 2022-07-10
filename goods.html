@@ -9,13 +9,11 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <link rel="shortcut icon" href="https://res.kurly.com/images/marketkurly/logo/favicon_v2.png" type="image/x-icon">
   <link rel="stylesheet" href="base.css">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="goods.css">
   <title>마켓컬리 :: 내일의 장보기, 마켓컬리</title>
 
   
 </head>
-
-
   <!-- header  -->
     <header>
       <div class="banner">
@@ -126,169 +124,32 @@
       </div>
     </nav>
     <!-- 상품 상세 페이지 -->
-    <div id="main">
-      <div id="content" style="opacity: 1;">
-      
-      <div id="qnb" class="quick-navigation" style="top: 20px;">
-      <style>
-          #qnb{position:absolute;z-index:1;right:20px;top:70px;width:80px;font:normal 12px/16px "Noto Sans";color:#333;letter-spacing:-0.3px;transition:top 0.2s}
-          .goods-goods_view #qnb{top:20px}
-          /* 배너 */
-          #qnb .bnr_qnb{padding-bottom:7px}
-          #qnb .bnr_qnb .thumb{width:80px;height:120px;vertical-align:top}
-          /* 메뉴 */    
-          #qnb .side_menu{width:80px;border:1px solid #ddd;border-top:0 none;background-color:#fff}
-          #qnb .link_menu{display:block;height:29px;padding-top:5px;border-top:1px solid #ddd;text-align:center}
-          #qnb .link_menu:hover,
-          #qnb .link_menu.on{color:#5f0080}
-          /* 최근본상품 */
-          #qnb .side_recent{position:relative;margin-top:6px;border:1px solid #ddd;background-color:#fff}
-          #qnb .side_recent .tit{display:block;padding:22px 0 6px;text-align:center}
-          #qnb .side_recent .list_goods{overflow:hidden;position:relative;width:60px;margin:0 auto}
-          #qnb .side_recent .list{position:absolute;left:0;top:0}
-          #qnb .side_recent .link_goods{display:block;overflow:hidden;width:60px;height:80px;padding:1px 0 2px}
-          #qnb .side_recent .btn{display:block;overflow:hidden;width:100%;height:17px;border:0 none;font-size:0;line-height:0;text-indent:-9999px}
-          
-          #qnb .side_recent .btn_up{position:absolute;left:0;top:0;background:url(https://res.kurly.com/pc/service/main/2002/ico_quick_up_hover.png) no-repeat 50% 50%}
-          #qnb .side_recent .btn_up.off{background:url(https://res.kurly.com/pc/service/main/2002/ico_quick_up.png) no-repeat 50% 50%}
-          #qnb .side_recent .btn_down{background:url(https://res.kurly.com/pc/service/main/2002/ico_quick_down_hover.png) no-repeat 50% 0}
-          #qnb .side_recent .btn_down.off{background:url(https://res.kurly.com/pc/service/main/2002/ico_quick_down.png) no-repeat 50% 0}
-          
-          
-          @media
-          only screen and (-webkit-min-device-pixel-ratio: 1.5),
-          only screen and (min-device-pixel-ratio: 1.5),
-          only screen and (min-resolution: 1.5dppx) {
-              #qnb .side_recent .btn_up{background-image:url(https://res.kurly.com/pc/service/main/2002/ico_quick_up_hover_x2.png);background-size:12px 18px}
-              #qnb .side_recent .btn_down{background-image:url(https://res.kurly.com/pc/service/main/2002/ico_quick_down_hover_x2.png);background-size:12px 18px}
-              #qnb .side_recent .btn_up.off{background-image:url(https://res.kurly.com/pc/service/main/2002/ico_quick_up_x2.png);background-size:12px 18px}
-              #qnb .side_recent .btn_down.off{background-image:url(https://res.kurly.com/pc/service/main/2002/ico_quick_down_x2.png);background-size:12px 18px}
-          }
-          @media all and (max-width: 1250px){
-              #qnb{display:none}
-          }
-      </style>
-      
-      <div class="bnr_qnb" id="brnQuick"><a href="/shop/board/view.php?id=notice&amp;no=64" id="brnQuickObj">
-          <img class="thumb" src="https://res.kurly.com/pc/service/main/1904/bnr_quick_20190403.png" alt="퀄리티있게 샛별배송">
-      </a>
+<div id="main">
+  <div id="content">
+    <div class="section_view">
+      <div id="sectionView">
+        <div class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1653034120706y0.jpg&quot;);"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXcAAAHnCAQAAADpr9U2AAABeUlEQVR42u3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALg0lPQAATTM2xoAAAAASUVORK5CYII=" alt="상품 대표 이미지" class="bg"></div> 
+        <p class="goods_name"><span class="btn_share"><button id="btnShare" data-goodsno="4499">공유하기</button></span>
+          <strong class="name">[벨지오이오소] 부라타 치즈</strong> <span class="short_desc">버터처럼 부드러운 크림이 들어있는 생치즈 </span></p> <p class="goods_dcinfo">회원할인가</p>
+          <p class="goods_price">
+            <span class="position"><span class="dc"><!----> <span class="dc_price">13,515<span class="won">원</span></span> <span class="dc_percent">15<span class="per">%</span></span></span> <a class="original_price"><span class="price">15,900<span class="won">원</span></span><img src="https://res.kurly.com/kurly/ico/2021/question_24_24_c999.svg" alt="물음표" class="ico"></a>
 
+             <span class="not_login"><span>로그인 후, 회원할인가와 적립혜택이 제공됩니다.</span> <!----></span></p> <!----> <!----> <!----> 
+             
+             <div class="goods_info"><!----> <dl class="list fst"><dt class="tit">판매단위</dt> <dd class="desc">1개</dd></dl> <dl class="list"><dt class="tit">중량/용량</dt> <dd class="desc">226g</dd></dl> <dl class="list"><dt class="tit">배송구분</dt> <!----> <dd class="desc">                  샛별배송/택배배송                </dd></dl> <!----> <dl class="list"><dt class="tit">포장타입</dt> <dd class="desc">                    냉장/스티로폼                     <strong class="emph">                      택배배송은 에코포장이 스티로폼으로 대체됩니다.                    </strong></dd></dl> <dl class="list"><dt class="tit">알레르기정보</dt> <dd class="desc">- 우유 함유</dd></dl> <dl class="list"><dt class="tit">유통기한</dt> <dd class="desc">수령일 포함 최소 5일 남은 제품을 보내 드립니다</dd></dl> <!----> <!---->  <dl class="list"><dt class="tit">안내사항</dt> <dd class="desc"><span class="txt">원재료가격 상승으로 22/03/04부터 판매가가 14,900원→15,900원으로 변경되오니 이용에 참고 부탁드립니다.</span></dd></dl> <!----> <!----> <!----></div> <!----></div> <!---->
+      <div id="cartPut"><div class="cart_option cartList cart_type2"><div class="inner_option"><!----> <!----> <div class="in_option"><div class="list_goods"><!----> <!----> <!----> <ul class="list list_nopackage"><li class="on"><span class="btn_position"><button type="button" class="btn_del"><span class="txt">삭제하기</span></button></span> <span class="name"><!---->                                  [벨지오이오소] 부라타 치즈                                  <!----></span> <span class="tit_item">구매수량</span> <div class="option"><span class="count"><button type="button" class="btn down on">수량내리기</button> <input type="number" readonly="readonly" onfocus="this.blur()" class="inp"> <button type="button" class="btn up on">수량올리기</button></span> <span class="price"><!----> <span class="dc_price">15,900원</span></span></div></li></ul></div> <div id="holidayDeliveryInfo" class="holiday_delivery"></div> <!----> <div class="total"><div class="price"><!----> <strong class="tit">총 상품금액 :</strong> <span class="sum"><span class="num">15,900</span> <span class="won">원</span></span></div> <p class="txt_point"><span class="ico">적립</span> <span class="no_login"><span>로그인 후, 회원할인가와 적립혜택 제공</span> <!----></span> <!----></p></div></div> <div class="cart_footer off"><div class="functions"><button type="button" class="pick_icon_button">                      찜하기 버튼                    </button> <button disabled="disabled" type="button" class="alarm_button">                      재입고 알림                    </button></div> <div class="button_wrap"><button type="button" class="base_button full">                      장바구니 담기                    </button> 
+        <!----></div>
+         <!----> <!---->
+        </div> <!----> <!---->
+      </div>
+    </div> 
       
-      </div>
-      
-      <div class="side_menu">
-      <a href="/shop/main/html.php?htmid=event/kurly.htm&amp;name=lovers" class="link_menu ">등급별 혜택</a>
-      <a href="/shop/board/list.php?id=recipe" class="link_menu ">레시피</a>
-      <a href="/shop/goods/goods_review_best.php" class="link_menu ">베스트 후기</a>
-      </div>
-      <div class="side_recent" style="display:none">
-      <strong class="tit">최근 본 상품</strong>
-      <div class="list_goods" data-height="209" style="height: 0px;">
-      <ul class="list"></ul>
-      </div>
-      <button type="button" class="btn btn_up off">최근 본 상품 위로 올리기</button>
-      <button type="button" class="btn btn_down off">최근 본 상품 아래로 내리기</button>
-      </div>
 
-      </div>
-      
-      <div class="section_view">
-      
-      <div id="sectionView"><div class="inner_view"><div class="thumb" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1653034120706y0.jpg&quot;);"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXcAAAHnCAQAAADpr9U2AAABeUlEQVR42u3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALg0lPQAATTM2xoAAAAASUVORK5CYII=" alt="상품 대표 이미지" class="bg"></div> <p class="goods_name"><span class="btn_share"><button id="btnShare" data-goodsno="4499">공유하기</button></span> <strong class="name">[벨지오이오소] 부라타 치즈</strong> <span class="short_desc">버터처럼 부드러운 크림이 들어있는 생치즈 </span></p> <p class="goods_dcinfo">회원할인가</p> <p class="goods_price"><span class="position"><span class="dc"><!----> <span class="dc_price">13,515<span class="won">원</span></span> <span class="dc_percent">15<span class="per">%</span></span></span> <a class="original_price"><span class="price">15,900<span class="won">원</span></span><img src="https://res.kurly.com/kurly/ico/2021/question_24_24_c999.svg" alt="물음표" class="ico"></a> <span class="layer_position"><!----> <span class="layer_price"><strong class="tit_layer">컬리판매가 기준 할인</strong>                        동일 품질 상품의 주요 온/오프라인 유통사 가격과 비교하여 컬리가 설정한 가격에서 할인된 가격입니다.                        <span class="bar"></span>                        적용된 할인가는 대표 상품의 가격으로 옵션에 따라 할인 혜택이 다를 수 있습니다. 할인 혜택은 당사 사정에 따라 변경될 수 있습니다.                    </span> <button type="button" class="btn_close">레이어 닫기</button></span></span> <!----> <!----> <!----> <!----> <span class="not_login"><span>로그인 후, 회원할인가와 적립혜택이 제공됩니다.</span> <!----></span></p> <!----> <!----> <!----> <div class="goods_info"><!----> <dl class="list fst"><dt class="tit">판매단위</dt> <dd class="desc">1개</dd></dl> <dl class="list"><dt class="tit">중량/용량</dt> <dd class="desc">226g</dd></dl> <dl class="list"><dt class="tit">배송구분</dt> <!----> <dd class="desc">                  샛별배송/택배배송                </dd></dl> <!----> <dl class="list"><dt class="tit">포장타입</dt> <dd class="desc">                    냉장/스티로폼                     <strong class="emph">                      택배배송은 에코포장이 스티로폼으로 대체됩니다.                    </strong></dd></dl> <dl class="list"><dt class="tit">알레르기정보</dt> <dd class="desc">- 우유 함유</dd></dl> <dl class="list"><dt class="tit">유통기한</dt> <dd class="desc">수령일 포함 최소 5일 남은 제품을 보내 드립니다</dd></dl> <!----> <!---->  <dl class="list"><dt class="tit">안내사항</dt> <dd class="desc"><span class="txt">원재료가격 상승으로 22/03/04부터 판매가가 14,900원→15,900원으로 변경되오니 이용에 참고 부탁드립니다.</span></dd></dl> <!----> <!----> <!----></div> <!----></div> <!----></div>
-      <div id="cartPut"><div class="cart_option cartList cart_type2"><div class="inner_option"><!----> <!----> <div class="in_option"><div class="list_goods"><!----> <!----> <!----> <ul class="list list_nopackage"><li class="on"><span class="btn_position"><button type="button" class="btn_del"><span class="txt">삭제하기</span></button></span> <span class="name"><!---->                                  [벨지오이오소] 부라타 치즈                                  <!----></span> <span class="tit_item">구매수량</span> <div class="option"><span class="count"><button type="button" class="btn down on">수량내리기</button> <input type="number" readonly="readonly" onfocus="this.blur()" class="inp"> <button type="button" class="btn up on">수량올리기</button></span> <span class="price"><!----> <span class="dc_price">15,900원</span></span></div></li></ul></div> <div id="holidayDeliveryInfo" class="holiday_delivery"></div> <!----> <div class="total"><div class="price"><!----> <strong class="tit">총 상품금액 :</strong> <span class="sum"><span class="num">15,900</span> <span class="won">원</span></span></div> <p class="txt_point"><span class="ico">적립</span> <span class="no_login"><span>로그인 후, 회원할인가와 적립혜택 제공</span> <!----></span> <!----></p></div></div> <div class="cart_footer off"><div class="functions"><button type="button" class="pick_icon_button">                      찜하기 버튼                    </button> <button disabled="disabled" type="button" class="alarm_button">                      재입고 알림                    </button></div> <div class="button_wrap"><button type="button" class="base_button full">                      장바구니 담기                    </button> <!----></div> <!----> <!----></div> <!----> <!----></div></div> <div class="cart_option cartList cart_type1"><div class="inner_option"><!----> <!----> <div class="in_option"><div class="list_goods"><div class="bar_open"><button type="button" class="btn_close"><span class="ico">상품 선택</span></button></div> <!----> <!----> <!----></div> <!----> <!----> <!----></div> <div class="cart_footer off"><div class="functions"><button type="button" class="pick_icon_button">                      찜하기 버튼                    </button> <button disabled="disabled" type="button" class="alarm_button">                      재입고 알림                    </button></div> <div class="button_wrap"><button type="button" class="base_button full">                      장바구니 담기                    </button> <!----></div> <!----> <!----></div> <!----> <!----></div></div> <div class="cart_option cart_type3 notify_option"><div class="inner_option"><strong class="tit">재입고 알림 신청</strong> <p class="name_deal">[벨지오이오소] 부라타 치즈</p> <!----> <!----> <p class="notice"><span class="ico">·</span>상품이 입고되면 앱 푸시 또는 알림톡으로 알려 드립니다.</p> <div class="group_btn layer_btn2"><span class="btn_type2"><button type="button" class="txt_type">취소</button></span> <span class="btn_type1"><button type="button" class="txt_type">신청하기</button></span></div></div></div> <div class="cart_option cart_result cart_type3"><div class="inner_option"><button type="button" class="btn_close1">pc레이어닫기</button> <p class="success">상품 구매를 위한 <span class="bar"></span>배송지를 설정해주세요</p> <div class="group_btn layer_btn2"><span class="btn_type2"><button type="button" class="txt_type">취소</button></span> <span class="btn_type1"><button type="button" class="txt_type"><span class="ico_search"></span>주소 검색</button></span></div></div></div> <form name="frmBuyNow" method="post" action="/shop/order/order.php"><input type="hidden" name="mode" value="addItem"> <input type="hidden" name="goodsno" value=""></form> <form name="frmWishlist" method="post"></form></div>
-      </div>
-      
-      
-      
-      <div class="layout-wrapper goods-view-area">
-      
-      
-      <script src="/shop/data/skin/designgj/autoslider.js"></script>
+
+
+    <div class="layout-wrapper goods-view-area">
+
       <div class="goods-add-product">
-      <h3 class="goods-add-product-title">RELATED PRODUCT</h3>
-      <div class="goods-add-product-wrapper __slide-wrapper" data-slide-item="5">
-      <button class="goods-add-product-move goods-add-product-move-left __slide-go-left">왼쪽으로 슬라이드 이동</button>
-      <button class="goods-add-product-move goods-add-product-move-right __slide-go-right">오른쪽으로 슬라이드 이동</button>
-      <div class="goods-add-product-list-wrapper" style="height:320px">
-      <ul class="goods-add-product-list __slide-mover">
-      <li class="goods-add-product-item __slide-item">
-      <div class="goods-add-product-item-figure">
-      <a href="#" onclick="KurlyTrackerLink('../goods/goods_view.php?goodsno=5869', 'select_related_product', {origin_price: 9980, package_id: 5869, package_name: '[안젤로] 고르곤졸라 피칸테'}, {openWindow: true})">
-      <img src="//img-cf.kurly.com/shop/data/goods/1510731290319m0.jpg" class="goods-add-product-item-image" onerror="this.src='https://res.kurly.com/mobile/service/common/bg_1x1.png'">
-      </a>
-      </div>
-      <div class="goods-add-product-item-content">
-      <div class="goods-add-product-item-content-wrapper">
-      <p class="goods-add-product-item-name">[안젤로] 고르곤졸라 피칸테</p>
-      <p class="goods-add-product-item-price">9,980원</p>
-      </div>
-      </div>
-      </li>
-      <li class="goods-add-product-item __slide-item">
-      <div class="goods-add-product-item-figure">
-      <a href="#" onclick="KurlyTrackerLink('../goods/goods_view.php?goodsno=5765', 'select_related_product', {origin_price: 6860, package_id: 5765, package_name: '[콜롬보] 리코타'}, {openWindow: true})">
-      <img src="//img-cf.kurly.com/shop/data/goods/1487314206589m0.jpg" class="goods-add-product-item-image" onerror="this.src='https://res.kurly.com/mobile/service/common/bg_1x1.png'">
-      </a>
-      </div>
-      <div class="goods-add-product-item-content">
-      <div class="goods-add-product-item-content-wrapper">
-      <p class="goods-add-product-item-name">[콜롬보] 리코타</p>
-      <p class="goods-add-product-item-price">6,860원</p>
-      </div>
-      </div>
-      </li>
-      <li class="goods-add-product-item __slide-item">
-      <div class="goods-add-product-item-figure">
-      </div>
-      <div class="goods-add-product-item-content">
-      <div class="goods-add-product-item-content-wrapper">
-      <p class="goods-add-product-item-name">[콜롬보] 모짜렐라</p>
-      <p class="goods-add-product-item-price">5,400원</p>
-      </div>
-      </div>
-      </li>
-      <li class="goods-add-product-item __slide-item">
-      <div class="goods-add-product-item-figure">
-      <a href="#" onclick="KurlyTrackerLink('../goods/goods_view.php?goodsno=5761', 'select_related_product', {origin_price: 5500, package_id: 5761, package_name: '[푸글리제] 모짜렐라'}, {openWindow: true})">
-      <img src="//img-cf.kurly.com/shop/data/goods/1487213431901m0.jpg" class="goods-add-product-item-image" onerror="this.src='https://res.kurly.com/mobile/service/common/bg_1x1.png'">
-      </a>
-      </div>
-      <div class="goods-add-product-item-content">
-      <div class="goods-add-product-item-content-wrapper">
-      <p class="goods-add-product-item-name">[푸글리제] 모짜렐라</p>
-      <p class="goods-add-product-item-price">5,500원</p>
-      </div>
-      </div>
-      </li>
-      <li class="goods-add-product-item __slide-item">
-      <div class="goods-add-product-item-figure">
-      <a href="#" onclick="KurlyTrackerLink('../goods/goods_view.php?goodsno=5748', 'select_related_product', {origin_price: 5500, package_id: 5748, package_name: '[프리코] 슬라이스 치즈 4종'}, {openWindow: true})">
-      <img src="//img-cf.kurly.com/shop/data/goods/1652922927172m0.jpg" class="goods-add-product-item-image" onerror="this.src='https://res.kurly.com/mobile/service/common/bg_1x1.png'">
-      </a>
-      </div>
-      <div class="goods-add-product-item-content">
-      <div class="goods-add-product-item-content-wrapper">
-      <p class="goods-add-product-item-name">[프리코] 슬라이스 치즈 4종</p>
-      <p class="goods-add-product-item-price">5,500원</p>
-      </div>
-      </div>
-      </li>
-      <li class="goods-add-product-item __slide-item">
-      <div class="goods-add-product-item-figure">
-      <a href="#" onclick="KurlyTrackerLink('../goods/goods_view.php?goodsno=5640', 'select_related_product', {origin_price: 13500, package_id: 5640, package_name: '[김소영 아티장의 안단테] 랑세 퐁듀 드 샤우르스'}, {openWindow: true})">
-      <img src="//img-cf.kurly.com/shop/data/goods/1485945275204m0.jpg" class="goods-add-product-item-image" onerror="this.src='https://res.kurly.com/mobile/service/common/bg_1x1.png'">
-      </a>
-      </div>
-      <div class="goods-add-product-item-content">
-      <div class="goods-add-product-item-content-wrapper">
-      <p class="goods-add-product-item-name">[김소영 아티장의 안단테] 랑세 퐁듀 드 샤우르스</p>
-      <p class="goods-add-product-item-price">13,500원</p>
-      </div>
-      </div>
-      </li>
-      </ul>
-      </div>
-      </div>
       </div>
       
       <div class="goods-view-infomation detail_wrap_outer" id="goods-view-infomation">

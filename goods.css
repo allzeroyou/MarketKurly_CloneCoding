@@ -1,0 +1,1196 @@
+/* 상품 상세 페이지 */
+#content {
+  min-width: 1050px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section_view {
+  width: 1050px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+#sectionView .thumb {
+  float: left;
+  background-color: var(--white-color);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sectionView .goods_price .not_point, #sectionView .goods_price .not_login span, #sectionView .goods_price .not_login {
+  display: block;
+  padding-top: 7px;
+  font-size: var(--font-medium);
+  color: #5f0080;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+#sectionView .thumb .bg {
+  width: 430px;
+  height: 552px;
+}
+#sectionView .goods_name {
+  float: right;
+  width: 560px;
+  padding: 10px 0 29px;
+}
+#sectionView .btn_share {
+  display: block;
+  position: relative;
+}
+#sectionView #btnShare {
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background: url(https://res.kurly.com/mobile/service/goodsview/1910/ico_view_sns.png) no-repeat 50% 50%;
+  font-size: 0;
+}
+
+#sectionView .goods_name .name {
+  display: block;
+  padding-right: 60px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  word-break: break-all;
+}
+#sectionView .goods_name .short_desc {
+  display: block;
+  padding: 4px 60px 0 0;
+  font-size: 14px;
+  color: #999;
+  line-height: 20px;
+  word-break: break-all;
+}
+#sectionView .goods_dcinfo {
+  float: right;
+  width: 560px;
+  padding-right: 21px;
+  font-size: var(--font-medium);
+  line-height: 20px;
+}
+#sectionView .goods_price {
+  float: right;
+  width: 560px;
+  padding: 0 20px 0 0;
+}
+#sectionView .goods_price .dc {
+  display: block;
+  padding-top: 4px;
+}
+#sectionView .goods_price .dc_price {
+  font-weight: 700;
+  font-size: var(--font-exlarge);
+  line-height: 30px;
+  letter-spacing: 0;
+  word-break: break-all;
+}
+#sectionView .goods_price .dc .won {
+  padding: 0 7px 0 2px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  vertical-align: 2px;
+  letter-spacing: 0;
+}
+#sectionView .goods_price .dc_percent {
+  font-weight: 700;
+  font-size: var(--font-exlarge);
+  color: var(--red-color);
+  line-height: 30px;
+  letter-spacing: 0;
+}
+#sectionView .goods_price .dc_percent .per, #sectionView .goods_price .dc_percent {
+  font-weight: 700;
+  font-size: var(--font-exlarge);
+  color: var(--red-color);
+  line-height: 30px;
+  letter-spacing: 0;
+}
+#sectionView .goods_price .original_price {
+  float: left;
+  padding-top: 7px;
+}
+#sectionView .goods_price .price {
+  font-size: var(--font-medium);
+  color: #999;
+  line-height: 24px;
+  text-decoration: line-through;
+}
+
+#sectionView .goods_price .ico {
+  width: 24px;
+  height: 24px;
+  vertical-align: -6px;
+}
+
+#sectionView .goods_price .not_login {
+  padding-top: 4px;
+}
+
+/* goods info */
+
+#sectionView .goods_info {
+  float: right;
+  width: 560px;
+  margin-top: 19px;
+  padding-bottom: 19px;
+  border-top: 1px solid var(--semi-white);
+}
+#sectionView .goods_info .list.fst {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+#sectionView .goods_info .list {
+  overflow: hidden;
+  padding: 18px 0;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+#sectionView .goods_info .tit {
+  float: left;
+  width: 128px;
+  font-size: var(--font-medium);
+  color: var(--grey-light-color);
+  line-height: 20px;
+}
+#sectionView .goods_info .desc {
+  overflow: hidden;
+  font-size: var(--font-medium);
+  line-height: 20px;
+  word-break: break-all;
+}
+#sectionView .goods_info .emph {
+  display: block;
+  padding-top: 4px;
+  font-weight: 400;
+  font-size: var(--font-xsmall);
+  color: #666;
+  line-height: 16px;
+}
+
+
+
+/* 구매수량 */
+#cartPut .cart_type2 {
+  float: right;
+  width: 560px;
+  padding-bottom: 40px;
+}
+#cartPut .cart_option {
+  background-color: #fff;
+}
+
+#cartPut * {
+  font-family: noto sans;
+  color: #333;
+  letter-spacing: 0;
+}
+#cartPut .cart_option {
+  background-color: #fff;
+}
+#cartPut .cart_option .list {
+  overflow: hidden;
+  padding-bottom: 1px;
+}
+#cartPut .cart_type2 .list_goods {
+  padding-bottom: 18px;
+}
+#cartPut .cart_type2 .list_nopackage {
+  padding: 0;
+}
+#cartPut .cart_type2 .list_nopackage li {
+  float: none;
+  width: 100%;
+  padding: 0 0 5px;
+  margin: 0;
+  border: 0;
+}
+
+#cartPut .cart_type2 .list li {
+  float: right;
+  width: 410px;
+  padding: 11px 10px 11px 15px;
+  margin-bottom: -1px;
+  border: 1px solid #f4f4f4;
+}
+
+#cartPut .cart_option .list .btn_position {
+    display: block;
+    position: relative;
+}
+
+#cartPut .cart_type2 .list_nopackage .price, #cartPut .cart_type2 .list_nopackage .name, #cartPut .cart_type2 .list_nopackage .btn_position {
+  display: none;
+}
+#cartPut .cart_option .list .btn_position {
+  display: block;
+  position: relative;
+}
+
+#cartPut .cart_option .list .btn_del {
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: -1px;
+  width: 24px;
+  height: 24px;
+  border: 0;
+  background: url(https://res.kurly.com/pc/ico/2010/ico_cartput_del_24x25.svg) no-repeat 50% 50%;
+  background-size: 24px 25px;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+#cartPut .cart_type2 .list_nopackage .tit_item {
+  float: left;
+  width: 128px;
+  font-weight: 400;
+  font-size: var(--font-medium);
+  color: #666;
+  line-height: 20px;
+  letter-spacing: -.5px;
+}
+#cartPut .cart_type2 .list_nopackage .option {
+  padding-top: 0;
+}
+#cartPut .cart_type2 .list .option {
+  padding-top: 8px;
+}
+
+#cartPut .cart_option .list .count {
+  overflow: hidden;
+  float: left;
+  width: 88px;
+  height: 30px;
+  border: 1px solid #dddfe1;
+  border-radius: 3px;
+}
+#cartPut .cart_option .list .down.on {
+  background-image: url(https://res.kurly.com/pc/ico/2010/ico_minus_on.svg);
+}
+#cartPut .cart_option .list .down {
+  background: #fff url(https://res.kurly.com/pc/ico/2010/ico_minus.svg) no-repeat 50% 50%;
+  background-size: 30px 30px;
+}
+#cartPut .cart_option .list .btn {
+  overflow: hidden;
+  float: left;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+#cartPut .cart_option .list .inp {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-right: -1px;
+  padding: 0 0 4px;
+  border: 0;
+  background-color: #fff;
+  font-size: 14px;
+  color: #000;
+  line-height: 18px;
+  text-align: center;
+}
+#cartPut .cart_option .list .up.on {
+  background-image: url(https://res.kurly.com/pc/ico/2010/ico_plus_on.svg);
+}
+#cartPut .cart_option .list .up {
+  float: right;
+  margin-left: -1px;
+  background: #fff url(https://res.kurly.com/pc/ico/2010/ico_plus.svg) no-repeat 50% 50%;
+  background-size: 30px 30px;
+}
+#cartPut .cart_option .list .btn {
+  overflow: hidden;
+  float: left;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+#cartPut .cart_type2 .list .price {
+  float: right;
+  padding: 5px 4px 0;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: -.6px;
+}
+#cartPut .cart_type2 .list .dc_price {
+  float: right;
+}
+
+#cartPut .cart_type2 .list .name {
+  padding: 0 63px 0 0;
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: -.6px;
+}
+#cartPut .cart_type2 .list_nopackage .tit_item {
+  float: left;
+  width: 128px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #666;
+  line-height: 20px;
+  letter-spacing: -.5px;
+}
+#cartPut .cart_type2 .list_nopackage .option {
+  padding-top: 0;
+}
+#cartPut .cart_type2 .list .option {
+  padding-top: 8px;
+}
+#cartPut .cart_option .list .option {
+  overflow: hidden;
+}
+
+#cartPut .cart_option .list .count {
+  overflow: hidden;
+  float: left;
+  width: 88px;
+  height: 30px;
+  border: 1px solid #dddfe1;
+  border-radius: 3px;
+}
+
+#cartPut .cart_option .list .inp {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-right: -1px;
+  padding: 0 0 4px;
+  border: 0;
+  background-color: var(--white-color);
+  font-size: var(--font-medium);
+  color: var(--black-color);
+  line-height: 18px;
+  text-align: center;
+}
+#cartPut .cart_option .list .up.on {
+  background-image: url(https://res.kurly.com/pc/ico/2010/ico_plus_on.svg);
+}
+#cartPut .cart_option .list .up {
+  float: right;
+  margin-left: -1px;
+  background: #fff url(https://res.kurly.com/pc/ico/2010/ico_plus.svg) no-repeat 50% 50%;
+  background-size: 30px 30px;
+}
+#cartPut .cart_option .list .btn {
+  overflow: hidden;
+  float: left;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+#cartPut .cart_type2 .list .price {
+  float: right;
+  padding: 5px 4px 0;
+  font-size: var(--font-xsmall);
+  line-height: 20px;
+  letter-spacing: -.6px;
+}
+#cartPut .cart_option .list .price {
+  font-weight: 700;
+  text-align: right;
+}
+
+#cartPut .cart_type2 .list .dc_price {
+  float: right;
+}
+
+
+/* total */
+#cartPut .cart_type2 {
+  float: right;
+  width: 560px;
+  padding-bottom: 40px;
+}
+#cartPut .cart_option {
+  background-color: #fff;
+}
+
+
+#cartPut .cart_type2 .total {
+  padding: 30px 0 20px;
+  border-top: 1px solid #f4f4f4;
+}
+#cartPut .cart_option .total .price {
+  overflow: hidden;
+  text-align: right;
+}
+#cartPut .cart_option .total .tit {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+  vertical-align: 2px;
+}
+#cartPut .cart_option .total .num {
+  padding-left: 8px;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 32px;
+}
+#cartPut .cart_option .total .won {
+  padding-left: 2px;
+  font-size: var(--font-large);
+  font-weight: 700;
+  line-height: 20px;
+  vertical-align: -1px;
+}
+#cartPut .cart_type2 .total .txt_point {
+  padding-top: 13px;
+}
+#cartPut .cart_option .total .ico {
+  display: inline-block;
+  width: 38px;
+  height: 20px;
+  margin-right: 2px;
+  border-radius: 10px;
+  background-color: var(--yellow-color);
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--white-color);
+  line-height: 20px;
+  text-align: center;
+  vertical-align: 1px;
+}
+
+#cartPut .cart_footer {
+  display: flex;
+  width: 100%;
+}
+#cartPut .cart_footer .functions {
+  display: flex;
+  align-items: center;
+}
+#cartPut .pick_icon_button{
+  width: 56px;
+  height: 56px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  color: transparent!important;
+  background: url(https://res.kurly.com/pc/service/pick/btn-itemdetail-like.svg) no-repeat center;
+  background-size: 32px;
+  cursor: pointer;
+}
+#cartPut .cart_footer .functions button:not(:first-of-type) {
+  margin-left: 8px;
+}
+#cartPut .alarm_button:disabled {
+  background: url(https://res.kurly.com/pc/service/goodsview/btn-itemdetail-restock-dim.svg) no-repeat center;
+  background-size: 32px;
+  cursor: default;
+}
+#cartPut .alarm_button {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  color: transparent!important;
+  background: url(https://res.kurly.com/pc/service/goodsview/btn-itemdetail-restock.svg) no-repeat center;
+  background-size: 32px;
+  cursor: pointer;
+}
+#cartPut .cart_footer .button_wrap:not(:first-of-type) {
+  margin-left: 8px;
+}
+#cartPut .base_button {
+  width: 432px;
+  height: 56px;
+  border: none;
+  border-radius: 3px;
+  font-size: var(--font-medium);
+  font-weight: 600;
+  line-height: normal;
+  color:var(--white-color);
+  background-color: var(--purple-color);
+  border: 1px solid var(--purple-color);
+  cursor: pointer;
+}
+
+/* 상품 상세정보 */
+.goods-add-product-title {
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.8;
+}
+.layout-wrapper.goods-view-area {
+  padding-right: 40px;
+}
+.goods-add-product {
+  position: relative;
+}
+.goods-add-product-title {
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.8;
+}
+.goods-add-product-title:before {
+  width: 20px;
+  height: 5px;
+  background-color: #000;
+  display: block;
+  content: '';
+}
+.__slide-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.goods-add-product-move.goods-add-product-move-left {
+  left: 0;
+  background-image: url(https://res.kurly.com/pc/etc/old/images/common/slide-sub-left-button-black.png);
+  background-position: left;
+}
+
+.goods-add-product-move {
+  position: absolute;
+  text-indent: -9999px;
+  background-color: transparent;
+  border: 0;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-repeat: no-repeat;
+  z-index: 3;
+  width: 30px;
+  background-position: 50% 50%;
+}
+.goods-add-product-move.goods-add-product-move-right {
+  right: 0;
+  background-image: url(https://res.kurly.com/pc/etc/old/images/common/slide-sub-right-button-black.png);
+  background-position: right;
+}
+.goods-add-product-list-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 940px;
+  margin: 0 auto;
+  height: 350px;
+}
+.__slide-mover {
+  position: absolute;
+  left: 0;
+  width: 10000%;
+  height: 100%;
+}
+.__slide-item {
+  float: left;
+  height: 100%;
+}
+.goods-add-product-item {
+  float: left;
+  width: 180px;
+  height: 100%;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+}
+.goods-add-product-item-figure {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+}
+.goods-add-product-item-figure a {
+  display: block;
+}
+.goods-add-product-item-image {
+  width: 100%;
+  height: 100%;
+}
+.goods-add-product-item-content {
+  height: 120px;
+}
+.goods-add-product-item-content-wrapper {
+  padding: 10px;
+  position: relative;
+  min-height: 75px;
+}
+.goods-add-product .goods-add-product-item-name {
+  overflow: hidden;
+  width: 100%;
+  height: 35px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+}
+.goods-add-product-item-price {
+  font-size: var(--font-medium);
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+
+.goods-view-infomation {
+  margin-top: 50px;
+}
+.goods-view-infomation-tab-group {
+  display: flex;
+  flex-direction: row;
+  width: 1010px;
+  margin: 0 auto;
+}
+.goods-view-infomation-tab {
+  display: flex;
+  flex: 1;
+  vertical-align: top;
+}
+.goods-view-infomation-tab:first-child .goods-view-infomation-tab-anchor {
+  border-left: 1px solid #eee;
+}
+.goods-view-infomation-tab-anchor.__active {
+  background-color: #fff;
+  color: var(--purple-color);
+  border-bottom: 0;
+}
+
+
+.goods-view-infomation-tab-anchor {
+  flex: 1;
+  position: relative;
+  top: 1px;
+  height: 60px;
+  line-height: 59px;
+  text-align: center;
+  display: block;
+  color: #666;
+  font-size: var(--font-medium);
+  font-weight: 700;
+  letter-spacing: -.3px;
+  font-family: noto sans;
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  border-left: none;
+}
+.goods-view-infomation-tab-anchor .count_review {
+  position: relative;
+  top: -1px;
+}
+.goods-view-infomation-content.__active {
+  display: block;
+}
+.goods_wrap {
+  width: 1010px;
+  margin: 0 auto;
+  font-family: noto sans;
+  font-weight: 200;
+  letter-spacing: 0;
+}
+.goods_wrap .context.last {
+  margin-bottom: 170px;
+}
+
+.goods_wrap .goods_intro .context h3 {
+  display: block;
+  margin: 75px 0 0;
+  padding-bottom: 35px;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+  border-bottom: 1px solid #c1c1c1;
+  color: #666;
+}
+.goods_wrap .goods_intro .context h3 small {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 14px;
+  line-height: 15px;
+}
+.goods_wrap .goods_intro .context .words {
+  margin-top: 28px;
+}
+.goods_wrap .context .words {
+  margin-top: 55px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #373737;
+}
+
+.goods_wrap .sub_tit {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.goods_wrap .goods_pick h3, .goods_point h3 {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  font-size: 50px;
+  width: 100%;
+  margin-bottom: 70px;
+  font-weight: 700;
+  font-family: noto sans;
+  font-weight: 700;
+  color: #666;
+}
+.goods_point h3:before {
+  width: 1010px;
+}
+.goods_wrap .goods_pick h3:before, .goods_point h3:before {
+  content: " ";
+  position: absolute;
+  z-index: 1;
+  top: 28px;
+  width: 100%;
+  height: 1px;
+  background: #b9b9b9;
+}
+.goods_point h3 span {
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  margin-left: 260px;
+  padding: 0 15px;
+  background: #fff;
+  text-shadow: 2px 0;
+}
+.goods_wrap .context.last {
+  margin-bottom: 170px;
+}
+.goods_wrap .context {
+  margin-bottom: 130px;
+}
+.goods_wrap .context .words {
+  margin-top: 55px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #373737;
+}
+.goods_wrap .sub_tit {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 38px;
+}
+.goods_wrap .context.last {
+  margin-bottom: 170px;
+}
+.goods_wrap .about_brand h3 {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  margin-bottom: 70px;
+  font-size: 50px;
+  font-family: noto sans;
+  font-weight: 700;
+  color: #666;
+}
+.goods_wrap .about_brand h3:before {
+  content: " ";
+  position: absolute;
+  z-index: 1;
+  top: 28px;
+  width: 100%;
+  height: 1px;
+  background: #b9b9b9;
+}
+.goods_wrap .about_brand .context.last {
+  margin-bottom: 170px;
+}
+.goods_wrap .about_brand .context .words {
+  margin: 0 0 100px;
+}
+
+#goods-infomation, #goods-review, #goods-qna {
+  padding-top: 100px;
+  margin-bottom: 0;
+}
+table.extra-information {
+  background: #e0e0e0;
+  margin: 30px 0 60px;
+  width: 100%!important;
+}
+table.extra-information th {
+  width: 15%;
+  background: #f5f5f5;
+  color: #515151;
+}
+table.extra-information td {
+  width: 35%;
+  color: #666;
+}
+
+.whykurly_area {
+  width: 1000px;
+  margin: 0 auto;
+  color: #000;
+  letter-spacing: -.045em;
+}
+
+.whykurly_area .row:first-child {
+    border-top: 0;
+    padding-top: 44px;
+}
+.whykurly_area .tit_whykurly {
+  display: block;
+  font-size: 33px;
+  font-weight: 500;
+  color: #666;
+  text-align: center;
+}
+.whykurly_area .txt_area {
+  overflow: hidden;
+  margin-top: 45px;
+  text-align: center;
+}
+.whykurly_area .why-kurly .col:first-child {
+  margin-left: 0;
+}
+
+.whykurly_area .txt_area .col .icon {
+    width: 100%;
+    text-align: center;
+}
+.whykurly_area .why-kurly .col .icon img {
+  width: 40px;
+  height: 40px;
+}
+.whykurly_area .why-kurly .col .info {
+  display: block;
+}
+.whykurly_area .why-kurly .col .info .title {
+  color: var(--purple-color);
+  font-weight: 600;
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  line-height: 27px;
+  margin-top: 10px;
+}
+.whykurly_area .why-kurly .col .info .desc {
+  display: block;
+}
+.whykurly_area .why-kurly .col .info .desc p {
+  display: block;
+  margin-top: 22px;
+  color: #333;
+  padding: 0;
+  font-size: var(--font-medium);
+  font-weight: 100;
+  line-height: 1.56;
+  letter-spacing: -.4px;
+  text-align: center;
+}
+
+/* 고객행복센터 */
+.happy_center {
+  overflow: hidden;
+  font: normal 16px/23px 'Noto Sans';
+  color: #333;
+  letter-spacing: 0;
+}
+
+.happy_center.fst {
+  padding: 60px 5px 0;
+  border-top: 1px solid #ddd;
+}
+.happy_center .happy .tit {
+  font-weight: 700;
+  font-size: var(--font-exlarge);
+  color: #666;
+  line-height: 41px;
+  letter-spacing: .75px;
+}
+.happy_center .happy .sub {
+  font-weight: 200;
+  padding-top: 31px;
+}
+.happy_center .happy .emph {
+  display: block;
+  padding-bottom: 6px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #666;
+}
+.happy_center .list {
+  overflow: hidden;
+  width: 100%;
+  padding: 59px 0 71px;
+}
+.happy_center .list li {
+  float: left;
+  width: 340px;
+}
+.happy_center .list .tit {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--purple-color);
+  line-height: 27px;
+}
+
+.happy_center .list .sub {
+  font-weight: 200;
+  padding-top: 9px;
+  font-size: 17px;
+  line-height: 25px;
+}
+.happy_center .unfold {
+  overflow: hidden;
+  position: relative;
+  padding: 14px 0 17px;
+  border: 1px solid #ddd;
+}
+.happy_center .unfold .tit {
+  float: left;
+  width: 179px;
+  padding: 0 0 0 29px;
+  font-weight: 700;
+  font-size: 18px;
+  color:  var(--purple-color);
+  line-height: 27px;
+  letter-spacing: 0;
+}
+.happy_center .unfold .sub {
+  float: left;
+  width: 650px;
+  padding: 0;
+  line-height: 27px;
+}
+.happy_center .asked {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  width: 95px;
+  height: 24px;
+  margin-top: -14px;
+  font-size: 16px;
+  color:  var(--purple-color);
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: -.4px;
+}
+.happy_center .asked .txt {
+  padding-right: 20px;
+}
+.happy_center.on .happy_faq {
+  display: block;
+}
+.happy_center .happy_faq.fst {
+  padding: 53px 0 56px;
+}
+.happy_center .happy_faq {
+  display: none;
+  overflow: hidden;
+  padding: 39px 0 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.happy_faq .item {
+  float: left;
+  width: 340px;
+  padding: 0 0 0 31px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 25px;
+}
+.happy_faq .questions {
+  float: right;
+  width: 664px;
+  padding: 2px 20px 0 0;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 22px;
+}
+.happy_faq .bar_pc {
+  display: block;
+}
+.happy_faq .questions .space {
+  height: 0;
+}
+
+.happy_faq .noti {
+  padding-top: 22px;
+}
+.happy_faq .subject.no_padding {
+  padding-top: 0;
+}
+.happy_faq .subject {
+  display: block;
+  padding: 30px 0 6px;
+  font-weight: 700;
+  font-size: 15px;
+  color:  var(--purple-color);
+  line-height: 22px;
+}
+.happy_center.lst .unfold {
+  border-top: none;
+}
+.happy_center .unfold .tit {
+  float: left;
+  width: 179px;
+  padding: 0 0 0 29px;
+  font-weight: 700;
+  font-size: 18px;
+  color:  var(--purple-color);
+  line-height: 27px;
+  letter-spacing: 0;
+}
+.happy_center .unfold .sub {
+  float: left;
+  width: 650px;
+  padding: 0;
+  line-height: 27px;
+}
+
+/* 상품 리뷰 */
+
+#goods-review {
+  min-height: 850px;
+}
+.goods-view-infomation-board {
+  width: 100%;
+}
+#goods-qna {
+  padding-top: 100px;
+  margin-bottom: 0;
+}
+.board-container {
+  height: 100%;
+}
+.board-header-container {
+  padding-bottom: 38px;
+  font-family: Noto Sans;
+}
+.board-header-container strong {
+  display: block;
+  padding-bottom: 16px;
+  font-size: var(--font-medium);
+  font-weight: 700;
+  line-height: 24px;
+  color: #333;
+}
+
+
+.list-description {
+    font-family: Noto Sans;
+    font-size: var(--font-medium);
+    line-height: 24px;
+    font-weight: 400;
+    color: #999;
+}
+.list-description li {
+  padding-left: 12px;
+}
+.list-description li:before {
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  margin: 11px 6px 0 -10px;
+  background: #999;
+  vertical-align: top;
+  content: "";
+}
+.list-description a {
+  font-weight: 700;
+  color: #999;
+  text-decoration: underline;
+}
+
+.board-item-container.product {
+  width: 1010px;
+}
+.board-item-container .inquiry-board-header {
+  display: table;
+  table-layout: fixed;
+  border-bottom: 1px solid #333;
+}
+.board-item-container .inquiry-board-header>div {
+  display: table-cell;
+  text-align: center;
+  padding: 18px 0 20px;
+  width: 100px;
+  font-family: Noto Sans;
+  font-size: var(--font-medium);
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: -.5px;
+  color: #333;
+}
+
+.board-item-container .board-list, .board-item-container .inquiry-notice-list {
+  position: relative;
+}
+
+.board-item-container.product .board-list>li, .board-item-container.product .inquiry-notice-list>li {
+  padding: 0;
+  height: 61px;
+}
+
+.board-item-container .board-list>li, .board-item-container .inquiry-notice-list>li {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  padding: 16px 0;
+  font-family: Noto Sans;
+  font-size: var(--font-medium);
+  line-height: 20px;
+  text-align: center;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.board-item-container.product .board-list>li .product-detail, .board-item-container.product .inquiry-notice-list>li .product-detail {
+  height: 100%;
+  padding: 0 0 0 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.board-item-container.product .board-list>li.loading .product-detail strong, .board-item-container.product .inquiry-notice-list>li.loading .product-detail strong {
+  width: 690px;
+}
+.board-item-container .board-list>li.loading .frame-img:after, .board-item-container .board-list>li.loading .notice-cell :after, .board-item-container .board-list>li.loading .product-detail :after, .board-item-container .board-list>li.loading .txt_sub:after, .board-item-container .inquiry-notice-list>li.loading .frame-img:after, .board-item-container .inquiry-notice-list>li.loading .notice-cell :after, .board-item-container .inquiry-notice-list>li.loading .product-detail :after, .board-item-container .inquiry-notice-list>li.loading .txt_sub:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(90deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.5) 60%,hsla(0,0%,100%,0));
+  animation: shimmer 2s infinite;
+  content: "";
+}
+.board-item-container .board-list>li .item-cell, .board-item-container .inquiry-notice-list>li .item-cell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100px;
+}
+.txt_sub.text_medium {
+  color: #999;
+}
+
+.board-item-container .board-list>li.loading>div .txt_sub, .board-item-container .inquiry-notice-list>li.loading>div .txt_sub {
+  position: relative;
+  width: 95px;
+  height: 22px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 2px;
+  background: #eee;
+}
+
+.board-item-container.product .board-list>li, .board-item-container.product .inquiry-notice-list>li {
+  padding: 0;
+  height: 61px;
+}
